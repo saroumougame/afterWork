@@ -4,3 +4,6 @@ monolog:
             type:  stream
             path:  "php://stderr"
             level: debug
+doctrine:
+    dbal:
+        url: "%env(DATABASE_URL)%"
